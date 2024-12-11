@@ -15,5 +15,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnEntrar.setOnClickListener {
+            val usuario = binding.editTextUser.text.toString().trim();
+            val senha = binding.editTextPassword.text.toString().trim();
+
+            if (usuario.equals("user") && senha.equals("senha")) {
+
+            }
+        }
     }
 }
